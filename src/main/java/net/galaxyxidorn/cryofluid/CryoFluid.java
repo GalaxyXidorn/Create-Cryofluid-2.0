@@ -2,6 +2,7 @@ package net.galaxyxidorn.cryofluid;
 
 import com.google.common.eventbus.EventBus;
 import net.galaxyxidorn.cryofluid.block.ModBlocks;
+import net.galaxyxidorn.cryofluid.item.ModCreativeModeTabs;
 import net.galaxyxidorn.cryofluid.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,13 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+
+
+
+
+
+
+
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CryoFluid.MOD_ID)
 public class CryoFluid {
@@ -53,6 +61,8 @@ public class CryoFluid {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
