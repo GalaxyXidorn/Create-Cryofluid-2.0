@@ -1,6 +1,7 @@
 package net.galaxyxidorn.cryofluid;
 
 import com.google.common.eventbus.EventBus;
+import net.galaxyxidorn.cryofluid.block.ModBlocks;
 import net.galaxyxidorn.cryofluid.item.ModItems;
 import org.slf4j.Logger;
 
@@ -54,6 +55,7 @@ public class CryoFluid {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -72,6 +74,10 @@ public class CryoFluid {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CRYONITECRYSTAL);
             event.accept(ModItems.CRYODUST);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.CRYONITE_BLOCK);
         }
     }
 

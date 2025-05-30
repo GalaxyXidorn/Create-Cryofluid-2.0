@@ -1,4 +1,6 @@
 {
   "item.cryofluid.cryonitecrystal": "Cryonite Crystals",
-  "item.cryofluid.cryodust": "Cryodust"
+  "item.cryofluid.cryodust": "Cryodust",
+
+  "block.cryofluid.cryonite_block": "Block of Cryonite"
 }

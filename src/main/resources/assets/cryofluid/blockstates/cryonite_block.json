@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cryofluid:block/cryonite_block"
+    }
+  }
+}
