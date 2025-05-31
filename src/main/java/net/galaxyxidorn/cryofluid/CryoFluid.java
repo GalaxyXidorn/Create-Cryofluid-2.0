@@ -1,6 +1,8 @@
 package net.galaxyxidorn.cryofluid;
 
 import net.galaxyxidorn.cryofluid.block.ModBlocks;
+import net.galaxyxidorn.cryofluid.fluid.ModFluidTypes;
+import net.galaxyxidorn.cryofluid.fluid.ModFluids;
 import net.galaxyxidorn.cryofluid.item.ModCreativeModeTabs;
 import net.galaxyxidorn.cryofluid.item.ModItems;
 import org.slf4j.Logger;
@@ -36,6 +38,8 @@ public class CryoFluid {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 

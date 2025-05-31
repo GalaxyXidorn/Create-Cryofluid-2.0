@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "count": 3,
+      "item": "cryofluid:cryodust"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "cryofluid:cryofluid"
+    }
+  ]
+}
