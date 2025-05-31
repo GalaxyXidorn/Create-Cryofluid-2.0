@@ -32,8 +32,4 @@ jobs:
           echo "Sending file: $FILE_PATH"
           curl -X POST "https://discord.com/api/webhooks/1378255132654964817/y_Qv-FizHRaV4bTkD3V3Gr7jnQ-iowj84UTCJU2Sp6keh5Iz3VpF7iX8XWR67xc4xn6B" \
             -F "file=@$FILE_PATH" \
-            -F "payload_json=$(jq -nc \
-              --arg msg "✅ Build successful from commit [$SHORT_SHA](https://github.com/${{ github.repository }}/commit/${{ github.sha }}): $COMMIT_MSG" \
-              --arg username "Github" \
-              --arg avatar "https://cdn-icons-png.flaticon.com/512/25/25231.png" \
-              '{content: $msg, username: $username, avatar_url: $avatar}')'
+            -F "payload_json={\"content\":\"✅ Build successful! Here's the latest build.\",\"username\":\"Github\",\"avatar_url\":\"https://cdn-icons-png.flaticon.com/512/25/25231.png\"}"
