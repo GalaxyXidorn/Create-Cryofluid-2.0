@@ -24,15 +24,12 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: cyrofluid-artifacts
-          path: build/libs/*.jar
-
-      - name: Send built file to discord
-        uses: sinshutu/upload-to-discord@master
+      - name: Send JAR to Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        with:
-          args: ./build/libs/*.jar
+        run: |
+          FILE_PATH=$(find build/libs -name "*.jar" | head -n 1)
+          echo "Sending file: $FILE_PATH"
+          curl -X POST "$DISCORD_WEBHOOK" \
+            -F "file=@$FILE_PATH" \
+            -F "payload_json={\"content\":\"✅ Build successful! Here's the latest JAR file.\"}"
