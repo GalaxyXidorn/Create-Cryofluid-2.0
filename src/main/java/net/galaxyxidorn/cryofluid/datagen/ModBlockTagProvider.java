@@ -25,6 +25,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get())
                 .add(ModBlocks.FROZEN_DEEPSLATE.get())
                 .add(ModBlocks.CRYONITE_ORE.get());
-        tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.CRYONITE_ORE.get()); // Change to NEEDS_DIAMOND_TOOL if you want it to be mineable by only diamond pickaxe
+        tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.CRYONITE_ORE.get());
     }
 }

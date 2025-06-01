@@ -30,7 +30,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CRYONITE_BLOCK.get());
         dropSelf(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get());
         add(ModBlocks.FROZEN_DEEPSLATE.get(), (block) -> createSingleItemTableWithSilkTouch(block, ModBlocks.COBBLED_FROZEN_DEEPSLATE.get()));
-        add(ModBlocks.CRYONITE_ORE.get(), (block) -> createMultipleOreDrops(block, ModItems.CRYONITECRYSTAL.get(), 5, 7)); // Change drops according to ur wish and then runData
+        add(ModBlocks.CRYONITE_ORE.get(), (block) -> createMultipleOreDrops(block, ModItems.CRYONITECRYSTAL.get(), 1, 2));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
