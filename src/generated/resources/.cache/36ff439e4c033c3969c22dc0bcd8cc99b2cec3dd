@@ -1,10 +1,13 @@
-// 1.21.1	2025-06-01T07:47:43.7934812	Block States: cryofluid
+// 1.21.1	2025-06-01T08:30:54.4363042	Block States: cryofluid
 ad31dd3c0073d67cf8e2909d5497e7c47651a408 assets/cryofluid/blockstates/cobbled_frozen_deepslate.json
 f0841dda9d25a2156edd6937b45d2a3a177dc647 assets/cryofluid/blockstates/cryonite_block.json
+57a2429d8021693836fe61326353646fedba5e9e assets/cryofluid/blockstates/cryonite_ore.json
 6aeb0865507179b97b6c54b5fecc11c6c7c21f27 assets/cryofluid/blockstates/frozen_deepslate.json
 c6cad4254d888b9a9ad61cc6e5d138a819b2b3ea assets/cryofluid/models/block/cobbled_frozen_deepslate.json
 4bfc466b355a603753c2971f6bf4208f924c822b assets/cryofluid/models/block/cryonite_block.json
+3cee26be37f04931352a77ff2bbe2adfb8bb8fb3 assets/cryofluid/models/block/cryonite_ore.json
 618148fbda0d32b9104899f8076cebd44e2a756b assets/cryofluid/models/block/frozen_deepslate.json
 a3499238c1b847f0a06acaa14a7e732ccf9a944d assets/cryofluid/models/item/cobbled_frozen_deepslate.json
 7cf61deac4a5b2a63ac5aeb9042cac5d74f9ea18 assets/cryofluid/models/item/cryonite_block.json
+ec029d6416199cdf1437d351c476a0cdb733d05c assets/cryofluid/models/item/cryonite_ore.json
 2abbd9f4f675257214ec46257f391a49677cbcca assets/cryofluid/models/item/frozen_deepslate.json

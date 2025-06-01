@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CRYONITE_BLOCK);
         blockWithItem(ModBlocks.FROZEN_DEEPSLATE);
         blockWithItem(ModBlocks.COBBLED_FROZEN_DEEPSLATE);
+        blockWithItem(ModBlocks.CRYONITE_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

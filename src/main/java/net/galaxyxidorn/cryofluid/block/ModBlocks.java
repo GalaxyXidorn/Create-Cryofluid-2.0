@@ -3,12 +3,10 @@ package net.galaxyxidorn.cryofluid.block;
 import net.galaxyxidorn.cryofluid.CryoFluid;
 import net.galaxyxidorn.cryofluid.fluid.ModFluids;
 import net.galaxyxidorn.cryofluid.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -29,6 +27,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> COBBLED_FROZEN_DEEPSLATE = registerBlock("cobbled_frozen_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)));
+
+    public static final DeferredBlock<DropExperienceBlock> CRYONITE_ORE = registerBlock("cryonite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+    // change UniformInt to change how much exp is dropped
 
     public static final DeferredBlock<LiquidBlock> CRYOFLUID = BLOCKS.register("cryofluid",
             () -> new LiquidBlock(ModFluids.CRYOFLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission().noLootTable()));

@@ -1,0 +1,4 @@
+// 1.21.1	2025-06-01T09:56:45.7330785	Registries
+893775e53316313c9b3773469a3ad5548b73ac28 data/cryofluid/neoforge/biome_modifier/add_cryonite_ore.json
+32661053bdc079ab066cefb53012ddef0945b206 data/cryofluid/worldgen/configured_feature/cryonite_ore.json
+bf64e53181c4002c5675f7fdc3fba6f715fcb649 data/cryofluid/worldgen/placed_feature/cryonite_ore_placed.json
