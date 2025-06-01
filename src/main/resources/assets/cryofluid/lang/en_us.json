@@ -4,7 +4,9 @@
 
   "block.cryofluid.cryonite_block": "Block of Cryonite",
   "block.cryofluid.frozen_deepslate": "Frozen Deepslate",
+  "block.cryofluid.cobbled_frozen_deepslate": "Cobbled Frozen Deepslate",
 
+  "fluid_type.cryofluid.cryofluid_type": "Cryofluid",
 
   "creativetab.cryofluid.create_cryofluid": "Create: Cryofluid"
 }

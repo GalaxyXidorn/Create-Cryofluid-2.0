@@ -21,6 +21,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.CRYONITE_BLOCK.get());
+                .add(ModBlocks.CRYONITE_BLOCK.get())
+                .add(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get())
+                .add(ModBlocks.FROZEN_DEEPSLATE.get());
     }
 }

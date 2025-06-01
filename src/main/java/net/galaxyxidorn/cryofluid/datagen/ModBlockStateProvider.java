@@ -16,6 +16,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.CRYONITE_BLOCK);
+        blockWithItem(ModBlocks.FROZEN_DEEPSLATE);
+        blockWithItem(ModBlocks.COBBLED_FROZEN_DEEPSLATE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

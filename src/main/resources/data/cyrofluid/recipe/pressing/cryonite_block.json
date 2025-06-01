@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "count": 9,
+      "item": "cryofluid:cryonite_crystal"
+    }
+  ],
+  "results": [
+    {
+      "id": "cryofluid:cryonite_block"
+    }
+  ]
+}

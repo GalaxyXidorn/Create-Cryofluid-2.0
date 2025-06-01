@@ -25,8 +25,10 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final DeferredBlock<Block> FROZEN_DEEPSLATE = registerBlock("frozen_deepslate",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COBBLED_FROZEN_DEEPSLATE = registerBlock("cobbled_frozen_deepslate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)));
 
     public static final DeferredBlock<LiquidBlock> CRYOFLUID = BLOCKS.register("cryofluid",
             () -> new LiquidBlock(ModFluids.CRYOFLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission().noLootTable()));

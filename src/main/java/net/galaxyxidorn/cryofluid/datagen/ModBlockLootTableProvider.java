@@ -18,6 +18,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.CRYONITE_BLOCK.get());
+        dropSelf(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get());
+        add(ModBlocks.FROZEN_DEEPSLATE.get(), (block) -> createSingleItemTableWithSilkTouch(block, ModBlocks.COBBLED_FROZEN_DEEPSLATE.get()));
     }
 
     @Override

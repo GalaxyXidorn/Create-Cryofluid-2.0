@@ -1,18 +1,13 @@
 {
-  "type": "create:crushing",
+  "type": "create:pressing",
   "ingredients": [
     {
       "item": "cryofluid:cryonite_block"
     }
   ],
-  "processing_time": 150,
   "results": [
     {
-      "count": 3,
-      "id": "cryofluid:cryonite_crystal"
-    },
-    {
-      "chance": 0.5,
+      "count": 9,
       "id": "cryofluid:cryonite_crystal"
     }
   ]

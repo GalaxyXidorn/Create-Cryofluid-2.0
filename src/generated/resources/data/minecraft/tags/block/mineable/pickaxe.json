@@ -1,5 +1,7 @@
 {
   "values": [
-    "cryofluid:cryonite_block"
+    "cryofluid:cryonite_block",
+    "cryofluid:cobbled_frozen_deepslate",
+    "cryofluid:frozen_deepslate"
   ]
 }

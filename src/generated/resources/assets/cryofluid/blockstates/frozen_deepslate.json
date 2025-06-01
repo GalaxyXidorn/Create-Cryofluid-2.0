@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cryofluid:block/frozen_deepslate"
+    }
+  }
+}

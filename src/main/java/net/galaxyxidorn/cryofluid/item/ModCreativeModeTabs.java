@@ -25,7 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRYODUST);
                         output.accept(ModBlocks.CRYONITE_BLOCK);
                         output.accept(ModBlocks.FROZEN_DEEPSLATE);
-
+                        output.accept(ModBlocks.COBBLED_FROZEN_DEEPSLATE);
                     }).build());
 
 
