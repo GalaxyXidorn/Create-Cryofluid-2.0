@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ff",
+    "ff"
+  ],
+  "key": {
+    "f": {
+      "item": "cryofluid:cobbled_frozen_deepslate"
+    }
+  },
+  "result": {
+    "id": "cryofluid:polished_frozen_deepslate",
+    "count": 4
+  }
+}

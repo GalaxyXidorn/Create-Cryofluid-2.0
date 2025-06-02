@@ -23,7 +23,7 @@ public class ModBiomeModifiers {
         ctx.register(ADD_CRYONITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CRYONITE_ORE_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+                GenerationStep.Decoration.UNDERGROUND_DECORATION));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String nane) {

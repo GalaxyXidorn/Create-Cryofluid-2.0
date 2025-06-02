@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cryofluid:cobbled_frozen_deepslate"
+  },
+  "result": {
+    "count": 1,
+    "id": "cryofluid:polished_frozen_deepslate"
+  }
+}

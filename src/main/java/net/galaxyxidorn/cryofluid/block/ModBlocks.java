@@ -28,6 +28,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COBBLED_FROZEN_DEEPSLATE = registerBlock("cobbled_frozen_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)));
 
+    public static final DeferredBlock<Block> POLISHED_FROZEN_DEEPSLATE = registerBlock("polished_frozen_deepslate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DEEPSLATE)));
+
     public static final DeferredBlock<DropExperienceBlock> CRYONITE_ORE = registerBlock("cryonite_ore",
             () -> new DropExperienceBlock(UniformInt.of(1, 3), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 

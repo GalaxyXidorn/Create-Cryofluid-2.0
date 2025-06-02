@@ -1,5 +1,6 @@
 {
   "values": [
-    "cryofluid:cryonite_ore"
+    "cryofluid:cryonite_ore",
+    "cryofluid:cryonite_block"
   ]
 }

@@ -3,6 +3,7 @@
     "cryofluid:cryonite_block",
     "cryofluid:cobbled_frozen_deepslate",
     "cryofluid:frozen_deepslate",
-    "cryofluid:cryonite_ore"
+    "cryofluid:cryonite_ore",
+    "cryofluid:polished_frozen_deepslate"
   ]
 }

@@ -24,7 +24,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CRYONITE_BLOCK.get())
                 .add(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get())
                 .add(ModBlocks.FROZEN_DEEPSLATE.get())
-                .add(ModBlocks.CRYONITE_ORE.get());
-        tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.CRYONITE_ORE.get());
+                .add(ModBlocks.CRYONITE_ORE.get())
+                .add(ModBlocks.POLISHED_FROZEN_DEEPSLATE.get());
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.CRYONITE_ORE.get())
+                .add(ModBlocks.CRYONITE_BLOCK.get());
     }
 }

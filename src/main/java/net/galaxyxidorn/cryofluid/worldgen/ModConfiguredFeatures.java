@@ -6,12 +6,16 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.GeodeBlockSettings;
+import net.minecraft.world.level.levelgen.GeodeCrackSettings;
+import net.minecraft.world.level.levelgen.GeodeLayerSettings;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
-import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+import net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 
 import java.util.List;
 
@@ -21,9 +25,30 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRYONITE_ORE_KEY = registerKey("cryonite_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> ctx) {
-        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        List<OreConfiguration.TargetBlockState> cryoniteOres = List.of(OreConfiguration.target(deepslateReplaceables, ModBlocks.CRYONITE_ORE.get().defaultBlockState()));
-        register(ctx, CRYONITE_ORE_KEY, Feature.ORE, new OreConfiguration(cryoniteOres, 14)); // size = size of the vein
+        register(ctx, CRYONITE_ORE_KEY, Feature.GEODE, new GeodeConfiguration(
+                new GeodeBlockSettings(
+                        BlockStateProvider.simple(ModBlocks.CRYONITE_ORE.get()),
+                        BlockStateProvider.simple(ModBlocks.CRYONITE_ORE.get()),
+                        BlockStateProvider.simple(ModBlocks.CRYONITE_ORE.get()),
+                        BlockStateProvider.simple(ModBlocks.FROZEN_DEEPSLATE.get()),
+                        BlockStateProvider.simple(ModBlocks.FROZEN_DEEPSLATE.get()),
+                        List.of(Blocks.AIR.defaultBlockState()),
+                        BlockTags.FEATURES_CANNOT_REPLACE,
+                        BlockTags.GEODE_INVALID_BLOCKS
+                ),
+                new GeodeLayerSettings(1.0, 2.0, 2.0, 3.0),
+                new GeodeCrackSettings(0.0, 0.75, 2),
+                0.35,
+                0.0,
+                false,
+                ConstantInt.of(1),
+                ConstantInt.of(1),
+                ConstantInt.of(0),
+                -16,
+                16,
+                0.0,
+                1
+        ));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey (String name) {

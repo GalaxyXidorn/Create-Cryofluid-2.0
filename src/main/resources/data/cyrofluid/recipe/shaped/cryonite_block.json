@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "cryofluid:cryonite_crystal"
+    }
+  },
+  "result": {
+    "id": "cryofluid:cryonite_block"
+  }
+}
