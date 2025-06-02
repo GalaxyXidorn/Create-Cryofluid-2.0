@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cryofluid:cryonite_ore"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "count": 2,
+      "id": "cryofluid:cryonite_crystal"
+    },
+    {
+      "chance": 0.5,
+      "id": "cryofluid:cryonite_crystal"
+    }
+  ]
+}
