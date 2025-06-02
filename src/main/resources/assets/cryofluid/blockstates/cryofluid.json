@@ -1,7 +1,20 @@
 {
   "variants": {
-    "": {
-      "model": "cryofluid:block/cryofluid"
-    }
+    "level=0": { "model": "cryofluid:block/cryofluid" },
+    "level=1": { "model": "cryofluid:block/cryofluid" },
+    "level=2": { "model": "cryofluid:block/cryofluid" },
+    "level=3": { "model": "cryofluid:block/cryofluid" },
+    "level=4": { "model": "cryofluid:block/cryofluid" },
+    "level=5": { "model": "cryofluid:block/cryofluid" },
+    "level=6": { "model": "cryofluid:block/cryofluid" },
+    "level=7": { "model": "cryofluid:block/cryofluid" },
+    "level=8": { "model": "cryofluid:block/cryofluid" },
+    "level=9": { "model": "cryofluid:block/cryofluid" },
+    "level=10": { "model": "cryofluid:block/cryofluid" },
+    "level=11": { "model": "cryofluid:block/cryofluid" },
+    "level=12": { "model": "cryofluid:block/cryofluid" },
+    "level=13": { "model": "cryofluid:block/cryofluid" },
+    "level=14": { "model": "cryofluid:block/cryofluid" },
+    "level=15": { "model": "cryofluid:block/cryofluid" }
   }
 }

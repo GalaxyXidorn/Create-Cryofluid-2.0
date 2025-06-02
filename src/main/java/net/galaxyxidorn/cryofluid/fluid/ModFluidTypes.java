@@ -15,8 +15,8 @@ import static net.galaxyxidorn.cryofluid.CryoFluid.MOD_ID;
 public class ModFluidTypes {
     public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, MOD_ID);
 
-    public static final ResourceLocation CRYOFLUID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "fluid/cryofluid");
-//            CRYOFLUID_FLOWING = ResourceLocation.fromNamespaceAndPath(MOD_ID, "fluid/cryofluid_flowing");
+    public static final ResourceLocation CRYOFLUID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "fluid/cryofluid"),
+            CRYOFLUID_FLOWING = ResourceLocation.fromNamespaceAndPath(MOD_ID, "fluid/cryofluid_flow");
     public static final DeferredHolder<FluidType, FluidType> CRYOFLUID_TYPE = FLUID_TYPES.register("cryofluid_type",
             () -> new FluidType(FluidType.Properties.create()
                     .canSwim(false)
@@ -43,7 +43,7 @@ public class ModFluidTypes {
 
             @Override
             public @NotNull ResourceLocation getFlowingTexture() {
-                return CRYOFLUID;
+                return CRYOFLUID_FLOWING;
             }
         }, CRYOFLUID_TYPE.get());
     }

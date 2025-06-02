@@ -2,7 +2,11 @@
   "sources": [
     {
       "type": "single",
-      "resource": "cyrofluid:fluid/cryofluid"
+      "resource": "cryofluid:fluid/cryofluid"
+    },
+    {
+      "type": "single",
+      "resource": "cryofluid:fluid/cryofluid_flow"
     }
   ]
 }
