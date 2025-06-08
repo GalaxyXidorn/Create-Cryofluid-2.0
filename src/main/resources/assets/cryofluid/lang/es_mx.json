@@ -1,0 +1,16 @@
+{
+  "item.cryofluid.cryonite_crystal": "Cristal de Crionita",
+  "item.cryofluid.cryodust": "Polvo de Crio",
+  "item.cryofluid.cryofluid_bucket": "Cubeta de Criofluido",
+
+  "block.cryofluid.cryonite_block": "Bloque de Crionita",
+  "block.cryofluid.frozen_deepslate": "Pizarra Congelada Profunda",
+  "block.cryofluid.cobbled_frozen_deepslate": "Pizarra Congeleda Profunda Rocosa",
+  "block.cryofluid.polished_frozen_deepslate": "Pizarra Congelada Profunda Pulida",
+  "block.cryofluid.cryonite_ore": "Mineral de Crionita",
+  "block.cryofluid.cryo_casing": "Caja de Crio",
+
+  "fluid_type.cryofluid.cryofluid_type": "Criofluido",
+
+  "creativetab.cryofluid.create_cryofluid": "Create: Criofluido"
+}

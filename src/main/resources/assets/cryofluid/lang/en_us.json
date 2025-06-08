@@ -1,7 +1,7 @@
 {
   "item.cryofluid.cryonite_crystal": "Cryonite Crystal",
   "item.cryofluid.cryodust": "Cryodust",
-  "item.cryofluid.cryofluid_buck": "Bucket of Cryofluid",
+  "item.cryofluid.cryofluid_bucket": "Bucket of Cryofluid",
 
   "block.cryofluid.cryonite_block": "Block of Cryonite",
   "block.cryofluid.frozen_deepslate": "Frozen Deepslate",

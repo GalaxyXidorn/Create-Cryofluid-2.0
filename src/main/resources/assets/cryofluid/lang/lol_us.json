@@ -1,0 +1,14 @@
+{
+  "item.cryofluid.cryonite_crystal": "crionite cristal",
+  "item.cryofluid.cryodust": "crioduzt",
+  "item.cryofluid.cryofluid_bucket": "bukett full of cold stuff",
+
+  "block.cryofluid.cryonite_block": "cold shiny blok",
+  "block.cryofluid.frozen_deepslate": "cold dark ston",
+  "block.cryofluid.cobbled_frozen_deepslate": "coobled cold dark ston",
+  "block.cryofluid.polished_frozen_deepslate": "shiny cold dark ston",
+  "block.cryofluid.cryonite_ore": "rockz wit crionite",
+  "block.cryofluid.cryo_casing": "wud traped in cold rok",
+
+  "fluid_type.cryofluid.cryofluid_type": "cold watr"
+}
