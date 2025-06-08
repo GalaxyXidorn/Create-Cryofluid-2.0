@@ -25,11 +25,11 @@ jobs:
         run: ./gradlew build
 
       - name: Send JAR to Discord
-#        env:
-#          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        env:
+         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           FILE_PATH=$(find build/libs -name "*.jar" | head -n 1)
           echo "Sending file: $FILE_PATH"
-          curl -X POST "https://discord.com/api/webhooks/1378255132654964817/y_Qv-FizHRaV4bTkD3V3Gr7jnQ-iowj84UTCJU2Sp6keh5Iz3VpF7iX8XWR67xc4xn6B" \
+          curl -X POST "$DISCORD_WEBHOOK" \
             -F "file=@$FILE_PATH" \
             -F "payload_json={\"content\":\"✅ Build successful! Here's the latest build.\",\"username\":\"Github\",\"avatar_url\":\"https://cdn-icons-png.flaticon.com/512/25/25231.png\"}"
