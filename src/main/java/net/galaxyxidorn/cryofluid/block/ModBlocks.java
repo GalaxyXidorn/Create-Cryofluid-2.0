@@ -1,5 +1,7 @@
 package net.galaxyxidorn.cryofluid.block;
 
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import net.galaxyxidorn.cryofluid.CryoFluid;
 import net.galaxyxidorn.cryofluid.fluid.ModFluids;
 import net.galaxyxidorn.cryofluid.item.ModItems;
@@ -30,6 +32,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> POLISHED_FROZEN_DEEPSLATE = registerBlock("polished_frozen_deepslate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DEEPSLATE)));
+
+    public static final DeferredBlock<CasingBlock> CRYO_CASING = registerBlock("cryo_casing",
+            () -> new CasingBlock(BlockBehaviour.Properties.ofFullCopy(AllBlocks.ANDESITE_CASING.get())));
 
     public static final DeferredBlock<DropExperienceBlock> CRYONITE_ORE = registerBlock("cryonite_ore",
             () -> new DropExperienceBlock(UniformInt.of(1, 3), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)));

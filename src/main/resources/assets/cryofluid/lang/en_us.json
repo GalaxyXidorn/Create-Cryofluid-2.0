@@ -1,12 +1,14 @@
 {
   "item.cryofluid.cryonite_crystal": "Cryonite Crystal",
   "item.cryofluid.cryodust": "Cryodust",
+  "item.cryofluid.cryofluid_buck": "Bucket of Cryofluid",
 
   "block.cryofluid.cryonite_block": "Block of Cryonite",
   "block.cryofluid.frozen_deepslate": "Frozen Deepslate",
   "block.cryofluid.cobbled_frozen_deepslate": "Cobbled Frozen Deepslate",
   "block.cryofluid.polished_frozen_deepslate": "Polished Frozen Deepslate",
   "block.cryofluid.cryonite_ore": "Cryonite Ore",
+  "block.cryofluid.cryo_casing": "Cryo Casing",
 
   "fluid_type.cryofluid.cryofluid_type": "Cryofluid",
 

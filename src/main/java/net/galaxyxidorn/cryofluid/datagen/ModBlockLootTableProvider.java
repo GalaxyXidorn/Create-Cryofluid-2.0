@@ -27,6 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(ModBlocks.CRYO_CASING.get());
         dropSelf(ModBlocks.CRYONITE_BLOCK.get());
         dropSelf(ModBlocks.COBBLED_FROZEN_DEEPSLATE.get());
         dropSelf(ModBlocks.POLISHED_FROZEN_DEEPSLATE.get());

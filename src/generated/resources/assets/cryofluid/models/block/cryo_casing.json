@@ -1,0 +1,7 @@
+{
+  "parent": "cryofluid:block/connected",
+  "textures": {
+    "block": "cryofluid:block/cryo_casing",
+    "connected": "cryofluid:block/cryo_casing_connected"
+  }
+}

@@ -1,6 +1,7 @@
-// 1.21.1	2025-06-02T19:10:14.8704808	Loot Tables
+// 1.21.1	2025-06-08T17:03:54.1196863	Loot Tables
 4b3b9ed06ff84c14562c9bd84805dbd33b3022eb data/cryofluid/loot_table/blocks/cobbled_frozen_deepslate.json
 21126012e73f0a29a91f66e08161dd398f55a289 data/cryofluid/loot_table/blocks/cryonite_block.json
 0691f96bdfb8c00296ed80249bfc18086f44cf70 data/cryofluid/loot_table/blocks/cryonite_ore.json
+f3faa10aff40b2419ecdaae949105da6e4040793 data/cryofluid/loot_table/blocks/cryo_casing.json
 3ede0aa686c77e9b76026c32fef9eb6c3fddb3c0 data/cryofluid/loot_table/blocks/frozen_deepslate.json
 0f4720b6dafeee0023a755d500f2a1cee7e89795 data/cryofluid/loot_table/blocks/polished_frozen_deepslate.json

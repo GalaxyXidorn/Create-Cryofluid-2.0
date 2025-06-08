@@ -18,14 +18,15 @@ import static net.galaxyxidorn.cryofluid.CryoFluid.MOD_ID;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CRYONITE_ORE_KEY = registerKey("cryonite_ore_placed");
 
+    /**
+     * pCount is the chance it can spawn
+     * HeighRangePlacement.triangle means the ore will spawn most at the middle of the 2 values
+     *                    .uniform means the ore will spawn at all the y levels uniformly */
     public static void bootstrap(BootstrapContext<PlacedFeature> ctx) {
         var configuredFeatures = ctx.lookup(Registries.CONFIGURED_FEATURE);
 
         register(ctx, CRYONITE_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRYONITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(24, HeightRangePlacement.triangle(VerticalAnchor.absolute(-59), VerticalAnchor.absolute(-8))));
-        // pCount is the chance it can spawn
-        // HeighRangePlacement.triangle means the ore will spawn most at the middle of the 2 values
-        //                    .uniform means the ore will spawn at all the y levels uniformly
     }
 
     public static ResourceKey<PlacedFeature> registerKey (String name) {

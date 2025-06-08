@@ -2,6 +2,7 @@ package net.galaxyxidorn.cryofluid.fluid;
 
 import net.galaxyxidorn.cryofluid.CryoFluid;
 import net.galaxyxidorn.cryofluid.block.ModBlocks;
+import net.galaxyxidorn.cryofluid.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
@@ -18,6 +19,7 @@ public class ModFluids {
 
     public static final BaseFlowingFluid.Properties CRYOFLUID_PROPERTIES = new BaseFlowingFluid.Properties(ModFluidTypes.CRYOFLUID_TYPE, CRYOFLUID, CRYOFLUID_FLOWING)
             .block(ModBlocks.CRYOFLUID)
+            .bucket(ModItems.CRYOFLUID_BUCKET)
             .slopeFindDistance(3)
             .levelDecreasePerBlock(2)
             .tickRate(25);

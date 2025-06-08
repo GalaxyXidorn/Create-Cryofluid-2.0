@@ -1,3 +1,5 @@
-// 1.21.1	2025-06-02T19:16:13.8300238	Tags for minecraft:block mod id cryofluid
-a65351c4942bb79de47150ce7014a3938c5f3753 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-06-08T17:10:40.3196998	Tags for minecraft:block mod id cryofluid
+c0a6ac63898b9e426805ef5f1a3545db55010ac3 data/create/tags/block/casing.json
+c0a6ac63898b9e426805ef5f1a3545db55010ac3 data/minecraft/tags/block/mineable/axe.json
+da67753838124b0272e9d26e07a5136de2f5ce8b data/minecraft/tags/block/mineable/pickaxe.json
 e45b68f9fbb170b58f30eff6c3654f75d298039e data/minecraft/tags/block/needs_diamond_tool.json
