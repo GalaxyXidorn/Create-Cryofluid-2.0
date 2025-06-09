@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "cryofluid:cryonite_crystal"
+    },
+    {
+      "tag": "forge:nuggets/zinc"
+    }
+  ],
+  "results": [
+    {
+      "item": "cryofluid:cryonite_alloy"
+    }
+  ]
+}

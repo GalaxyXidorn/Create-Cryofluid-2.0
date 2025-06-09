@@ -17,5 +17,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CRYODUST.get());
         basicItem(ModItems.CRYONITECRYSTAL.get());
         basicItem(ModItems.CRYOFLUID_BUCKET.get());
+        basicItem(ModItems.CRYONITE_ALLOY.get());
     }
 }
