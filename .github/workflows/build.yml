@@ -32,4 +32,4 @@ jobs:
           echo "Sending file: $FILE_PATH"
           curl -X POST "$DISCORD_WEBHOOK" \
             -F "file=@$FILE_PATH" \
-            -F "payload_json={\"content\":\"✅ Build successful! Here's the latest build.\",\"username\":\"Github\",\"avatar_url\":\"https://cdn-icons-png.flaticon.com/512/25/25231.png\"}"
+            -F "payload_json={\"content\":\"${{ github.event.head_commit.message }}\",\"username\":\"Github\",\"avatar_url\":\"https://cdn-icons-png.flaticon.com/512/25/25231.png\"}"
