@@ -1,4 +1,5 @@
-// 1.21.1	2025-06-08T17:03:54.1196863	Loot Tables
+// 1.21.1	2025-06-12T22:24:22.6876385	Loot Tables
+3639610397b6a82afe0fa2e716e3dd1d7ae5205f data/cryofluid/loot_table/blocks/breeze_freezer.json
 4b3b9ed06ff84c14562c9bd84805dbd33b3022eb data/cryofluid/loot_table/blocks/cobbled_frozen_deepslate.json
 21126012e73f0a29a91f66e08161dd398f55a289 data/cryofluid/loot_table/blocks/cryonite_block.json
 0691f96bdfb8c00296ed80249bfc18086f44cf70 data/cryofluid/loot_table/blocks/cryonite_ore.json

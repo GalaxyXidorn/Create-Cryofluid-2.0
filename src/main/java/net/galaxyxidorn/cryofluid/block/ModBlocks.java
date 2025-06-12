@@ -3,6 +3,7 @@ package net.galaxyxidorn.cryofluid.block;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import net.galaxyxidorn.cryofluid.CryoFluid;
+import net.galaxyxidorn.cryofluid.block.custom.BreezeFreezerBlock;
 import net.galaxyxidorn.cryofluid.fluid.ModFluids;
 import net.galaxyxidorn.cryofluid.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -41,6 +42,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<LiquidBlock> CRYOFLUID = BLOCKS.register("cryofluid",
             () -> new LiquidBlock(ModFluids.CRYOFLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission().noLootTable()));
+
+    public static final DeferredBlock<BreezeFreezerBlock> BREEZE_FREEZER = BLOCKS.register("breeze_freezer",
+            () -> new BreezeFreezerBlock(BlockBehaviour.Properties.of()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

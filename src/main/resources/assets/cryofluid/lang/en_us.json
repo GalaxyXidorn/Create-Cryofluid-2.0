@@ -2,6 +2,7 @@
   "item.cryofluid.cryonite_crystal": "Cryonite Crystal",
   "item.cryofluid.cryodust": "Cryodust",
   "item.cryofluid.cryofluid_bucket": "Bucket of Cryofluid",
+  "item.cryofluid.cryonite_alloy": "Cryonite Alloy",
 
   "block.cryofluid.cryonite_block": "Block of Cryonite",
   "block.cryofluid.frozen_deepslate": "Frozen Deepslate",
@@ -9,6 +10,7 @@
   "block.cryofluid.polished_frozen_deepslate": "Polished Frozen Deepslate",
   "block.cryofluid.cryonite_ore": "Cryonite Ore",
   "block.cryofluid.cryo_casing": "Cryo Casing",
+  "block.cryofluid.breeze_freezer": "Breeze Freezer",
 
   "fluid_type.cryofluid.cryofluid_type": "Cryofluid",
 

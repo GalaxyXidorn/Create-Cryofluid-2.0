@@ -1,6 +1,7 @@
 package net.galaxyxidorn.cryofluid;
 
 import net.galaxyxidorn.cryofluid.block.ModBlocks;
+import net.galaxyxidorn.cryofluid.component.ModDataComponents;
 import net.galaxyxidorn.cryofluid.fluid.ModFluidTypes;
 import net.galaxyxidorn.cryofluid.fluid.ModFluids;
 import net.galaxyxidorn.cryofluid.item.ModCreativeModeTabs;
@@ -36,8 +37,9 @@ public class CryoFluid {
 
         ModCreativeModeTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
+        ModDataComponents.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
 

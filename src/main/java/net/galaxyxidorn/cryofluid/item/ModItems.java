@@ -1,7 +1,9 @@
 package net.galaxyxidorn.cryofluid.item;
 
 import net.galaxyxidorn.cryofluid.CryoFluid;
+import net.galaxyxidorn.cryofluid.block.ModBlocks;
 import net.galaxyxidorn.cryofluid.fluid.ModFluids;
+import net.galaxyxidorn.cryofluid.item.custom.BreezeFreezerBlockItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -17,6 +19,8 @@ public class ModItems {
             CRYONITE_ALLOY = simpleItem("cryonite_alloy");
     public static final DeferredItem<BucketItem> CRYOFLUID_BUCKET = ITEMS.register("cryofluid_bucket",
             () -> new BucketItem(ModFluids.CRYOFLUID.get(), new Item.Properties()));
+    public static final DeferredItem<BreezeFreezerBlockItem> BREEZE_FREEZER = ITEMS.register("breeze_freezer",
+            () -> new BreezeFreezerBlockItem(ModBlocks.BREEZE_FREEZER.get(), new Item.Properties()));
 
     private static DeferredItem<Item> simpleItem(String name) {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));

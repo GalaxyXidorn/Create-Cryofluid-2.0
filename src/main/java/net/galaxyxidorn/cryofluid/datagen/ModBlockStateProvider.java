@@ -23,14 +23,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.COBBLED_FROZEN_DEEPSLATE);
         blockWithItem(ModBlocks.CRYONITE_ORE);
         blockWithItem(ModBlocks.POLISHED_FROZEN_DEEPSLATE);
-        connectedBlock(ModBlocks.CRYO_CASING, "cryo_casing");
+        blockWithItem(ModBlocks.BREEZE_FREEZER);
+        connectedBlockWithItem(ModBlocks.CRYO_CASING, "cryo_casing");
     }
 
     public void blockWithItem(DeferredBlock<? extends Block> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 
-    public void connectedBlock(DeferredBlock<? extends Block> deferredBlock, String name) {
+    public void connectedBlockWithItem(DeferredBlock<? extends Block> deferredBlock, String name) {
         ModelBuilder<?> builder = models().getBuilder(name);
         builder.parent(new ModelFile.UncheckedModelFile(modLoc("block/connected")));
         builder.texture("block", modLoc("block/" + name));
